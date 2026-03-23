@@ -1,13 +1,13 @@
 class ClaudeUsageBar < Formula
   desc "Claude Code usage monitor for macOS menu bar"
   homepage "https://github.com/hwayoungjun/claude-usage-bar"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/hwayoungjun/claude-usage-bar/releases/download/v0.1.0/claude-usage-bar-darwin-arm64.tar.gz"
-      sha256 "de44183ba94a682f0bba98a53dab677845958eb39df632467c82043485697a9b"
+      url "https://github.com/hwayoungjun/claude-usage-bar/releases/download/v0.2.0/claude-usage-bar-darwin-arm64.tar.gz"
+      sha256 "63d5f559f053b993386894b5ce59a5bbe81d7a8ae0858771a5db6d5ba0af11b1"
     end
   end
 
@@ -21,18 +21,14 @@ class ClaudeUsageBar < Formula
 
   def caveats
     <<~EOS
-      ✓ Claude Code statusLine has been configured automatically.
+      Claude Code statusLine has been configured automatically.
 
-      Start the menu bar widget:
+      Launch the widget:
 
-        brew services start claude-usage-bar
+        claude-usage-bar
+
+      Or enable "Launch at Login" from the dropdown menu.
     EOS
-  end
-
-  service do
-    run [opt_bin/"claude-usage-bar"]
-    keep_alive true
-    log_path var/"log/claude-usage-bar.log"
   end
 
   test do
