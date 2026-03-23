@@ -15,14 +15,15 @@ class ClaudeUsageBar < Formula
     bin.install "claude-usage-bar-darwin-arm64" => "claude-usage-bar"
   end
 
+  def post_install
+    system bin/"claude-usage-bar", "setup"
+  end
+
   def caveats
     <<~EOS
-      Run setup and launch:
+      ✓ Claude Code statusLine has been configured automatically.
 
-        claude-usage-bar setup
-        claude-usage-bar
-
-      Auto-start on login:
+      Start the menu bar widget:
 
         brew services start claude-usage-bar
     EOS
