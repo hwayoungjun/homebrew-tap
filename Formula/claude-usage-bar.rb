@@ -17,23 +17,14 @@ class ClaudeUsageBar < Formula
 
   def caveats
     <<~EOS
-      To start using claude-usage-bar:
+      Run setup and launch:
 
-      1. Add statusLine to ~/.claude/settings.json:
+        claude-usage-bar setup
+        claude-usage-bar
 
-         "statusLine": {
-           "type": "command",
-           "command": "claude-usage-bar statusline"
-         }
+      Auto-start on login:
 
-      2. Launch the menu bar widget:
-
-         claude-usage-bar
-
-      3. Use Claude Code — usage updates automatically on each message.
-
-      To start automatically on login:
-         brew services start claude-usage-bar
+        brew services start claude-usage-bar
     EOS
   end
 
