@@ -1,13 +1,13 @@
 class ClaudeUsageBar < Formula
   desc "Claude Code usage monitor for macOS menu bar"
   homepage "https://github.com/hwayoungjun/claude-usage-bar"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/hwayoungjun/claude-usage-bar/releases/download/v0.3.1/claude-usage-bar-darwin-arm64.tar.gz"
-      sha256 "7c4d6bb82a81428b8c8c300e0c520b5bc0dfe18b4f4d86235137bb0f04a4da8e"
+      url "https://github.com/hwayoungjun/claude-usage-bar/releases/download/v0.4.0/claude-usage-bar-darwin-arm64.tar.gz"
+      sha256 "dd0eaa1eced8546439e9ff2b32a334d46201d2f5a34957e30695898ec5be572d"
 
       def install
         bin.install "claude-usage-bar-darwin-arm64" => "claude-usage-bar"
@@ -15,8 +15,8 @@ class ClaudeUsageBar < Formula
     end
 
     on_intel do
-      url "https://github.com/hwayoungjun/claude-usage-bar/releases/download/v0.3.1/claude-usage-bar-darwin-amd64.tar.gz"
-      sha256 "051f80d81da5b72abd907e6699286a2617f721889e4b5504b89b0a09bb4ac68c"
+      url "https://github.com/hwayoungjun/claude-usage-bar/releases/download/v0.4.0/claude-usage-bar-darwin-amd64.tar.gz"
+      sha256 "cb764888a41ee43bd31938e88b5121e9598f464bec807a057e7304c214ff4b8e"
 
       def install
         bin.install "claude-usage-bar-darwin-amd64" => "claude-usage-bar"
