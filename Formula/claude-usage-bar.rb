@@ -1,13 +1,13 @@
 class ClaudeUsageBar < Formula
   desc "Claude Code usage monitor for macOS menu bar"
   homepage "https://github.com/hwayoungjun/claude-usage-bar"
-  version "0.4.1"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/hwayoungjun/claude-usage-bar/releases/download/v0.4.1/claude-usage-bar-darwin-arm64.tar.gz"
-      sha256 "c556d88173ab9d278d25efcbf2f6007bd4f720df711df9db28862d00633d3d3a"
+      url "https://github.com/hwayoungjun/claude-usage-bar/releases/download/v0.5.0/claude-usage-bar-darwin-arm64.tar.gz"
+      sha256 "8a5935d16dc8939bd10b4b43e02a875ebbb4d373f956920dfa2b4e49ba7f5848"
 
       def install
         bin.install "claude-usage-bar-darwin-arm64" => "claude-usage-bar"
@@ -15,8 +15,8 @@ class ClaudeUsageBar < Formula
     end
 
     on_intel do
-      url "https://github.com/hwayoungjun/claude-usage-bar/releases/download/v0.4.1/claude-usage-bar-darwin-amd64.tar.gz"
-      sha256 "c5657a3bd77a051759d974570decc659b369b72a957f066915729f0c61659fce"
+      url "https://github.com/hwayoungjun/claude-usage-bar/releases/download/v0.5.0/claude-usage-bar-darwin-amd64.tar.gz"
+      sha256 "b6329cc7dc2a9a14e51d66347caec7ec6d98ceb0dff8749a22669e88bd2905b2"
 
       def install
         bin.install "claude-usage-bar-darwin-amd64" => "claude-usage-bar"
@@ -41,7 +41,7 @@ class ClaudeUsageBar < Formula
 
   def caveats
     <<~EOS
-      Claude Code statusLine has been configured automatically.
+      Claude Code statusLine and VS Code processWrapper have been configured automatically.
 
       Start the widget:
 
